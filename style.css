@@ -1,0 +1,81 @@
+h2 {
+    color: #ff9933;
+}
+
+p:first-of-type {
+    animation-name: text_color;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-iteration-count: 30;
+}
+
+#t1 {
+    font-weight: 800; 
+    color: #52527a; 
+    font-size: 300%;
+}
+
+#t2 {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#t3 {
+    font-size: 0px;
+}
+
+#a1:visited {
+    color: #66b3ff;
+}
+
+a {
+    display: inline-block;
+}
+
+.box {
+    display: inline-block;
+    height: 395px;
+    width: 250px;
+    border: 3px solid gray;
+    background-image: url("lemons.png");
+    background-size: contain;
+}
+
+table {
+    border: 2px ridge black;
+    border-collapse: collapse;
+    box-shadow: 3px 3px 5px gray;
+}
+
+tr:nth-child(odd) {
+    background: linear-gradient(to right, #3973ac, #80bfff);
+}
+
+tr:hover {
+    background: gray !important;
+    color: white;
+    font-weight: bolder !important;
+}
+
+th, td {
+    vertical-align: text-bottom;
+    border-bottom: 1px solid #c2c2d6;
+    text-align: left;
+    padding: 10px;
+}
+
+table, td, th {
+     width: 900px;
+}
+
+.example_text {
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+@keyframes text_color {
+    0%    {background-color: #A7DFF2;}
+    50%   {background-color: #DFA7F2;}    
+    100%  {background-color: #A7DFF2;}
+}
